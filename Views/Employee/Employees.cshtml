@@ -1,0 +1,23 @@
+﻿@model List<Reform.Models.EmployeeDetailModel>
+@{
+    ViewData["Title"] = "Employees";
+}
+
+<h1>Employees</h1>
+
+<table>
+<tr>
+    <th>Employee Name</th>
+        <th>Department Name</th>
+        <th>Designation Name</th>
+</tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@item.Employee_Name</td>
+            <td>@item.Department_Name</td>
+            <td>@item.Designation_Name</td>
+        </tr>
+    }
+</table>
+

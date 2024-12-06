@@ -1,0 +1,33 @@
+﻿@model List<Reform.Models.MusicModel>
+@{
+    ViewData["Title"] = "Music";
+}
+
+<head>
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<h1>Music</h1>
+
+
+<table>
+
+        <tr>
+            <th> Song Name </th>
+            <th> Writer Name </th>
+            <th> Singer Name  </th>
+            <th> Genre Type </th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+            <td> @item.SongName </td>
+            <td> @item.WriterName</td>
+            <td> @item.SingerName</td>
+            <td> @item.GenreType</td>
+            </tr>
+        }
+</table>
+
+

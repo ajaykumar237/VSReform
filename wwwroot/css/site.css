@@ -1,0 +1,41 @@
+body {
+    background-color: black;
+/*    background: url(https://unsplash.com/photos/music-room-with-lights-turned-on-gUK3lA3K7Yo)
+}*/
+
+h1{
+    color: pink;
+    text-align: center;
+    font-size:70px;
+
+
+}
+
+table{
+    width: 100%;
+}
+
+
+ th,td{
+     text-align:left;
+     border: 1px solid red;
+     padding: 5px;
+     
+ }
+
+ th{
+     background-color: aqua;
+     
+ }
+ tr:nth-child(2n+1) {
+     background-color:pink;
+ }
+tr:nth-child(2n) {
+    background-color: yellow;
+}
+
+footer{
+    background-color:aliceblue
+}
+
+

@@ -1,0 +1,28 @@
+﻿@model Reform.Models.EmployeeModel
+@using (Html.BeginForm("Index", "Employee", FormMethod.Post))
+{
+    @Html.Label("Enter Id")
+    @Html.TextBoxFor(model => model.Id)
+
+    @Html.Label("Enter Name")
+    @Html.TextBoxFor(model => model.Name)
+    @Html.Label("Enter Email")
+    @Html.TextBoxFor(model => model.Email)
+    <br/>//
+    @Html.Label("Enter Mobile No")
+    @Html.TextBoxFor(model => model.MobileNo)
+    <br/>
+    @Html.Label("Enter Salary")
+    @Html.TextBoxFor(model => model.Salary)
+    <br/>
+    @Html.Label("Enter Location")
+    @Html.TextBoxFor(model => model.Location)
+    <br/>
+    <input type = "Submit" value = "Save" name="b1" />
+    <input type = "Submit" value = "Delete" name = "b1" />
+    <input type = "Submit" value = "Update" name = "b1" />
+    <br/>
+    <Span> ViewBag.Message </Span>
+
+ 
+}
